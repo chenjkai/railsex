@@ -4,7 +4,7 @@
   <title>signin</title>
 </head>
 <body>
-    <%= form_tag("/signin",:method => "post") do %>
+    <%= form_tag("signin",:method => "post") do %>
        <%= label_tag(:name,"username:") %>
        <%= text_field_tag(:username)%> 	
        <%= label_tag(:password,"password:") %>
