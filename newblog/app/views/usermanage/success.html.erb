@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>signin</title>
+</head>
+<body>
+    <%= form_tag("/signin",:method => "post") do %>
+       <%= label_tag(:name,"username:") %>
+       <%= text_field_tag(:username)%> 	
+       <%= label_tag(:password,"password:") %>
+       <%= text_field_tag(:password)%>
+
+       <%= submit_tag("signin") %>
+    <% end %>	
+</body>
+</html>
